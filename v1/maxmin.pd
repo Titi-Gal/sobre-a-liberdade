@@ -1,0 +1,53 @@
+#N canvas 248 197 450 475 12;
+#X obj 62 126 inlet;
+#X obj 126 126 inlet;
+#X obj 38 46 inlet;
+#X obj 90 337 outlet;
+#X obj 108 157 <=;
+#X obj 44 156 >=;
+#X obj 90 321 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 44 186 moses 1;
+#X obj 154 337 outlet;
+#X obj 154 321 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 108 186 moses 1;
+#X obj 172 186 moses 1;
+#X obj 218 232 f;
+#X obj 88 76 t f f f f;
+#X obj 218 216 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 264 337 outlet;
+#X obj 264 321 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 218 291 moses 1;
+#X obj 172 156 >;
+#X obj 218 261 <;
+#X text 69 360 if >= max;
+#X text 153 361 if <= min;
+#X text 37 22 number to compare;
+#X text 43 103 max;
+#X text 152 100 min;
+#X text 245 361 if > max and < min;
+#X connect 0 0 5 1;
+#X connect 0 0 19 1;
+#X connect 1 0 4 1;
+#X connect 1 0 18 1;
+#X connect 2 0 13 0;
+#X connect 4 0 10 0;
+#X connect 5 0 7 0;
+#X connect 6 0 3 0;
+#X connect 7 1 6 0;
+#X connect 9 0 8 0;
+#X connect 10 1 9 0;
+#X connect 11 1 14 0;
+#X connect 12 0 19 0;
+#X connect 13 0 5 0;
+#X connect 13 1 4 0;
+#X connect 13 2 18 0;
+#X connect 13 3 12 1;
+#X connect 14 0 12 0;
+#X connect 16 0 15 0;
+#X connect 17 1 16 0;
+#X connect 18 0 11 0;
+#X connect 19 0 17 0;
