@@ -1,0 +1,17 @@
+#N canvas 766 75 253 152 12;
+#X obj 22 19 inlet;
+#X obj 22 109 outlet;
+#X obj 79 79 delay;
+#X obj 123 18 inlet;
+#X obj 79 109 outlet;
+#X obj 111 48 random-maxmin;
+#X obj 167 18 inlet;
+#X obj 22 49 t b b b;
+#X connect 0 0 7 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 1;
+#X connect 5 0 2 1;
+#X connect 6 0 5 2;
+#X connect 7 0 1 0;
+#X connect 7 1 2 0;
+#X connect 7 2 5 0;

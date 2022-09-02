@@ -1,0 +1,6 @@
+separar o allrange-tonicmode em dois objetos:
+tonicmode-noteslist vai gerar a lista de notas do modo em uma oitava a paritr da tonica e modo
+noteslist-allrange - esse já existe e é só conectar no final, vai gerar todas as notas no range 0 a 127
+
+Colocar pedal no piano levantando a cada mudança de acorde
+Refazer instrumentos de forma que existe só uma instância no programa e as listas de notas serão todas entradas para a mesma instância

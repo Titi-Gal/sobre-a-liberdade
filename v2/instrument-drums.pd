@@ -1,4 +1,4 @@
-#N canvas 692 165 370 344 12;
+#N canvas 763 180 370 358 12;
 #X obj 92 79 metro;
 #X obj 142 270 makenote;
 #X obj 142 301 noteout 10;
@@ -8,16 +8,16 @@
 #X msg 213 49 2000;
 #X obj 263 19 loadbang;
 #X obj 92 49 inlet;
-#X obj 251 119 inlet;
-#X obj 142 149 noteslist-random;
+#X obj 191 119 inlet;
+#X obj 142 149 noteslist-byrandom;
 #X obj 142 119 t b f;
 #X obj 142 79 random-updown-proportional;
 #X msg 285 49 10;
 #X msg 321 49 5;
-#X obj 168 240 inlet;
-#X text 211 240 intensidade;
+#X obj 228 240 inlet;
+#X text 271 240 intensidade;
 #X text 12 48 start-stop;
-#X text 253 100 notas;
+#X text 193 100 notas;
 #X connect 0 0 12 0;
 #X connect 1 0 2 0;
 #X connect 1 0 4 0;
